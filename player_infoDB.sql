@@ -14,3 +14,6 @@ add ranking serial;
 alter table player_info
 add primary key (fifa_id);
 
+alter table player_info
+add foreign key (club_id)
+references clubs(club_id);
