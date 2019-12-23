@@ -1,0 +1,57 @@
+player_info
+-
+fifa_id int pk
+name varchar
+age int
+nationality varchar
+overall int
+value bigint
+wage double
+position varchar
+ranking int
+club_id fk - clubs.club_id
+
+
+clubs
+-
+club_id int pk
+club varchar
+league varchar
+
+player_stats
+-
+fifa_id int fk - player_info.fifa_id
+crossing int
+finishing int
+headingaccuracy int
+shortpassing int
+volleys int
+dribbling int
+curve int
+fkaccuracy int
+longpassing int
+ballcontrol int
+acceleration int
+sprintspeed int
+agility int
+reactions int
+balance int
+shotpower int
+jumping int
+stamina int
+strength int
+longshots int
+aggression int
+interceptions int
+positioning int
+vision int
+penalties int
+composure int
+marking int
+standingtackle int
+slidingtackle int
+gkdiving int
+gkhandling int
+gkkicking int
+gkpositioning int
+gkreflexes int
